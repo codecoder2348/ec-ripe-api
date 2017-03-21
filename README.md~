@@ -16,8 +16,6 @@ $python network_coding_exercise.py --actions geoloc --ipaddr 192.0.0.1 --format 
 
 
 ==============================================
-
-
 The required unit tests are proovided in the network_unittest.py
 
 To run the file, we need the following command

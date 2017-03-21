@@ -49,4 +49,4 @@ def get_result(action, ipaddr, asn, data_format):
 
 
 if __name__ == '__main__':
-    print get_result(clargs.actions, clargs.ipaddr, clargs.asn, clargs.format)
+    print aget_result(clargs.actions, clargs.ipaddr, clargs.asn, clargs.format)
