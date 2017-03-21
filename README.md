@@ -1,0 +1,22 @@
+The RIPEstat Data API is the public data interface for RIPEstat. It is the only data source for the RIPEstat widgets.
+Using the file fetchFromAPIurl in this repo , we can send request to the API urls and fetch data from them.
+
+The file fetchFromAPIurl.py accepts arguments from command line.
+The arguments that can be provided are:
+--actions
+--ipaddr
+--asn
+--format
+
+ipaddr and asn can take multiple arguments and atleast one value for atleast one of these needs to be provided.
+--actions and --format are compulsory
+
+An example:
+$python network_coding_exercise.py --actions geoloc --ipaddr 192.0.0.1 --format json --ipaddr 132.3.22.0
+
+
+==============================================
+The required unit tests are proovided in the network_unittest.py
+
+To run the file, we need the following command
+$python network_unittest.py
