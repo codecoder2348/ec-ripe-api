@@ -12,7 +12,7 @@ ipaddr and asn can take multiple arguments and atleast one value for atleast one
 --actions and --format are compulsory
 
 An example:
-$python network_coding_exercise.py --actions geoloc --ipaddr 192.0.0.1 --format json --ipaddr 132.3.22.0
+$python fetchFromAPIurl.py --actions geoloc --ipaddr 192.0.0.1 --format json --ipaddr 132.3.22.0
 
 
 ==============================================
