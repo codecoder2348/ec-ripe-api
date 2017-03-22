@@ -6,11 +6,11 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--actions', action='store', dest='actions',
                     help='Specify the value for data call')
 parser.add_argument('--ipaddr', action='append', dest='ipaddr',
-                    default=[],
+                    default=None,
                     help='Add ip addresses to a list',
                     )
 parser.add_argument('--asn', action='append', dest='asn',
-                    default=[],
+                    default=None,
                     help='Add asns to a list',
                     )
 parser.add_argument('--format', action='store', dest='format',
@@ -22,7 +22,7 @@ def get_result(action, ipaddr, asn, data_format):
     if action is None and (action != 'network-info' or action != 'geoloc' or action != 'as-overview'):
         print("Invalid Action, Kindly enter values from [network-info, geoloc, as-overview]")
         return
-    if asn is None and ipaddr is None:
+    if asn == ipaddr == None:
         print("Unsupported resource type. It should be an ASN, IP prefix/range/address or hostname")
         return
     if data_format is None and (data_format != 'json' or data_format != 'xml' or action != 'yaml'):
